@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>GFC MSU Student Success Pathway</title>
 <style>
 :root {
@@ -211,6 +211,74 @@ li { margin: 4px 0; }
   .callout { grid-template-columns: 1fr; text-align: center; }
   .callout img { margin: 0 auto; }
 }
+
+/* Mobile usability refinements */
+button, a { touch-action: manipulation; }
+button, .nav a, .chip { min-height: 44px; }
+img, svg, video { max-width: 100%; height: auto; }
+
+@media (max-width: 700px) {
+  body { font-size: 17px; line-height: 1.6; }
+  .site { padding: 12px; }
+  .hero { padding: 22px 18px; border-radius: 18px; gap: 18px; }
+  .hero p { font-size: 1.05rem; }
+  .hero img { width: 120px; }
+  .kicker { font-size: 12px; }
+  h1 { font-size: clamp(2rem, 11vw, 3rem); line-height: 1.05; }
+  h2 { font-size: clamp(1.55rem, 7vw, 2rem); }
+  h3 { font-size: 1.15rem; }
+  .goal-box { font-size: 1rem; padding: 14px; }
+  .nav {
+    position: sticky;
+    top: 0;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 14px;
+    padding: 8px;
+    scroll-snap-type: x proximity;
+  }
+  .nav a { flex: 0 0 auto; scroll-snap-align: start; padding: 10px 14px; font-size: .92rem; }
+  .section { padding: 20px 16px; border-radius: 18px; margin: 16px 0; }
+  .card, .pill, .time { padding: 16px; }
+  .step { min-height: auto; text-align: left; padding: 16px; }
+  .step-number { margin-right: 8px; vertical-align: middle; }
+  .detail, .badge-detail { font-size: 1rem; padding: 16px; }
+  .chips { gap: 8px; }
+  .chip { width: 100%; border-radius: 12px; }
+  .translate-row { gap: 8px; margin: 18px 0; }
+  .arrow { transform: rotate(90deg); font-size: 1.7rem; line-height: 1; }
+  .badge { min-height: auto; padding: 16px; }
+  .callout { padding: 16px; gap: 12px; }
+  .callout img { width: 80px; }
+  .print-button { width: 100%; padding: 14px 16px; border-radius: 14px; }
+
+  /* On phones, show both sides of flip cards so no content is hidden behind hover/tap behavior. */
+  .flip { min-height: auto; cursor: default; }
+  .flip-inner, .flip.is-flipped .flip-inner { transform: none !important; min-height: auto; display: block; }
+  .front, .back {
+    position: relative;
+    inset: auto;
+    transform: none;
+    backface-visibility: visible;
+    min-height: auto;
+    box-shadow: none;
+  }
+  .front { align-items: flex-start; text-align: left; }
+  .front small { display: none; }
+  .back { margin-top: 10px; background: var(--soft-green); }
+}
+
+@media (max-width: 420px) {
+  .site { padding: 8px; }
+  .hero, .section { border-radius: 14px; }
+  .hero { padding: 18px 14px; }
+  .section { padding: 18px 14px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+}
+
 @media print {
   .nav, .print-button { display: none; }
   body { background: white; }
