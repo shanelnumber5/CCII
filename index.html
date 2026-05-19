@@ -270,6 +270,26 @@ img, svg, video { max-width: 100%; height: auto; }
   .back { margin-top: 10px; background: var(--soft-green); }
 }
 
+@media (max-width: 768px) {
+  .nav-links,
+  .pathway-nav,
+  .top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links a,
+  .pathway-nav a,
+  .top-nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
 @media (max-width: 420px) {
   .site { padding: 8px; }
   .hero, .section { border-radius: 14px; }
