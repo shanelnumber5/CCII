@@ -37,6 +37,17 @@ document.querySelectorAll('.flip-card').forEach((card) => {
 });
 
 // Resume Builder Data
+const OFFICIAL_NACE_COMPETENCIES = [
+  'Career & Self-Development',
+  'Communication',
+  'Critical Thinking',
+  'Equity & Inclusion',
+  'Leadership',
+  'Professionalism',
+  'Teamwork',
+  'Technology'
+];
+
 const resumeData = {
   communication: {
     label: 'Communication',
@@ -148,10 +159,10 @@ const resumeData = {
           'Where could interpersonal communication skills help you in future workplace or leadership situations?'
         ],
         growth: [
-          'Built confidence speaking in front of groups and unfamiliar audiences.',
-          'Strengthened self-awareness through presentation practice and feedback.',
-          'Developed communication skills useful for leadership, advocacy, and collaboration.',
-          'Learned to manage anxiety and adapt communication under pressure.'
+          'Developed stronger self-awareness in relationships and communication patterns.',
+          'Built confidence navigating conflict, listening, and interpersonal challenges.',
+          'Strengthened empathy and perspective-taking in personal and professional interactions.',
+          'Recognized communication as part of identity, belonging, and leadership development.'
         ],
       }
     }
@@ -189,6 +200,12 @@ const resumeData = {
           'What real-world problems did this course help you analyze differently?',
           'How did mathematical reasoning support decision-making or problem solving?',
           'Where could quantitative literacy be useful in your future career or workplace?'
+        ],
+        growth: [
+          'Developed confidence using quantitative reasoning to analyze real-world situations.',
+          'Strengthened persistence and problem-solving through mathematical exploration.',
+          'Built greater comfort interpreting data and numerical information.',
+          'Recognized how analytical thinking supports decision-making in academic, personal, and professional contexts.'
         ]
       },
 
@@ -221,6 +238,12 @@ const resumeData = {
           'How did statistics help you interpret or evaluate information differently?',
           'What assignments demonstrated your ability to work with data?',
           'Where could data literacy and evidence-based reasoning support future workplace success?'
+        ],
+        growth: [
+          'Developed confidence interpreting information, patterns, and evidence.',
+          'Strengthened curiosity and persistence when working through complex data.',
+          'Built awareness of how data can support fairer, clearer, and more informed decisions.',
+          'Recognized data literacy as part of personal, academic, and professional agency.'
         ]
       }
     }
@@ -270,7 +293,7 @@ const resumeData = {
         workforceLanguage: ['Strengthened creative thinking, systems thinking, and interpretation of complex ideas.', 'Analyzed imagined scenarios to explore real-world social, ethical, and technological questions.', 'Developed communication and critical thinking through genre analysis.'],
         bullets: ['Analyzed speculative texts to evaluate social, ethical, and cultural questions.', 'Strengthened creative thinking, interpretation, and written communication skills.', 'Connected imaginative scenarios to real-world problem solving and human concerns.'],
         skills: ['Creative Thinking', 'Critical Thinking', 'Cultural Analysis', 'Written Communication', 'Interpretation'],
-        nace: ['Critical Thinking', 'Communication', 'Creativity'],
+        nace: ['Critical Thinking', 'Communication', 'Career & Self-Development'],
         reflection: ['How did speculative fiction help you think differently about society or technology?', 'What assignment showed your creative or analytical thinking?', 'How could imaginative thinking help solve workplace problems?'],
         growth: [
           'Developed greater empathy through engagement with diverse stories and perspectives.',
@@ -412,7 +435,7 @@ const resumeData = {
         workforceLanguage: ['Strengthened creativity, visual problem-solving, and iterative design skills.', 'Used feedback and revision to improve project outcomes.', 'Developed attention to detail and creative decision-making.'],
         bullets: ['Applied design principles and creative problem-solving to visual projects.', 'Strengthened creativity, attention to detail, and visual communication skills.', 'Used critique and revision to improve project quality and decision-making.'],
         skills: ['Creativity', 'Design Thinking', 'Visual Communication', 'Problem Solving', 'Revision'],
-        nace: ['Creativity', 'Communication', 'Critical Thinking'],
+        nace: ['Career & Self-Development', 'Communication', 'Critical Thinking'],
         reflection: ['What project best shows your creative problem-solving?', 'How did feedback improve your work?', 'How could design thinking apply outside of art?'],
         growth: [
           'Developed confidence expressing ideas creatively through visual work.',
@@ -1725,12 +1748,13 @@ const languageHeading = document.getElementById('languageHeading');
 const languageOutput = document.getElementById('languageOutput');
 const resumeBullets = document.getElementById('resumeBullets');
 const reflectionPrompts = document.getElementById('reflectionPrompts');
+const growthList = document.getElementById('growthList');
 const skillTags = document.getElementById('skillTags');
 const naceTags = document.getElementById('naceTags');
-const academicToggle = document.getElementById('academicToggle');
+const outcomesToggle = document.getElementById('outcomesToggle');
 const workforceToggle = document.getElementById('workforceToggle');
 
-let currentLanguageMode = 'academic';
+let currentLanguageMode = 'outcomes';
 
 function populateCourses() {
   if (!degreeSelect || !courseSelect) return;
@@ -1750,19 +1774,31 @@ function populateCourses() {
 }
 
 function renderLanguageContent(course) {
-  if (!languageOutput || !academicToggle || !workforceToggle) return;
+  if (!languageOutput || !outcomesToggle || !workforceToggle) return;
 
-  const contentArray = currentLanguageMode === 'academic'
-    ? course.learningOutcomes
-    : course.workforceLanguage;
+  const contentArray =
+    currentLanguageMode === 'outcomes'
+      ? course.learningOutcomes || course.academicLanguage || []
+      : course.workforceLanguage || [];
 
-  academicToggle.classList.toggle('active', currentLanguageMode === 'academic');
+  outcomesToggle.classList.toggle('active', currentLanguageMode === 'outcomes');
   workforceToggle.classList.toggle('active', currentLanguageMode === 'workforce');
 
   if (languageHeading) {
-    languageHeading.textContent = currentLanguageMode === 'academic'
-      ? 'Academic Language'
-      : 'Workforce Language';
+    languageHeading.textContent =
+      currentLanguageMode === 'outcomes'
+        ? 'Learning Outcomes'
+        : 'Workforce Language';
+  }
+
+  languageOutput.innerHTML = '';
+
+  if (!contentArray.length) {
+    const emptyMessage = document.createElement('p');
+    emptyMessage.className = 'empty-state';
+    emptyMessage.textContent = 'Learning outcome information is pending for this course.';
+    languageOutput.appendChild(emptyMessage);
+    return;
   }
 
   const ul = document.createElement('ul');
@@ -1773,16 +1809,25 @@ function renderLanguageContent(course) {
     ul.appendChild(li);
   });
 
-  languageOutput.innerHTML = '';
   languageOutput.appendChild(ul);
 }
 
-function renderList(container, items) {
+function renderList(container, items, emptyText = 'Information pending for this section.') {
   if (!container) return;
 
   container.innerHTML = '';
 
-  items.forEach((item) => {
+  const listItems = items || [];
+
+  if (!listItems.length) {
+    const li = document.createElement('li');
+    li.className = 'empty-state';
+    li.textContent = emptyText;
+    container.appendChild(li);
+    return;
+  }
+
+  listItems.forEach((item) => {
     const li = document.createElement('li');
     li.textContent = item;
     container.appendChild(li);
@@ -1794,12 +1839,31 @@ function renderTags(container, items) {
 
   container.innerHTML = '';
 
-  items.forEach((item) => {
+  const tagItems = items || [];
+
+  const sortedItems =
+    container.id === 'naceTags'
+      ? [...tagItems].sort(
+          (a, b) =>
+            OFFICIAL_NACE_COMPETENCIES.indexOf(a) -
+            OFFICIAL_NACE_COMPETENCIES.indexOf(b)
+        )
+      : tagItems;
+
+  sortedItems.forEach((item) => {
     const span = document.createElement('span');
     span.className = 'tag';
     span.textContent = item;
     container.appendChild(span);
   });
+}
+
+function getDefaultGrowth(course) {
+  return [
+    `Developed greater confidence connecting ${course.title} to personal, academic, and career goals.`,
+    'Strengthened self-awareness by reflecting on how course experiences build transferable skills.',
+    'Recognized how classroom learning can support identity development, persistence, and future momentum.'
+  ];
 }
 
 function updateResumeOutput() {
@@ -1825,21 +1889,21 @@ function updateResumeOutput() {
 }
 
 if (courseDescription) {
-  courseDescription.textContent = course.description;
-}
-  if (courseDescription) courseDescription.textContent = course.description;
+    courseDescription.textContent =
+      course.catalogDescription ||
+      course.description ||
+      'Official catalog description pending.';
+  }
 
   renderLanguageContent(course);
   renderList(resumeBullets, course.bullets);
   renderList(reflectionPrompts, course.reflection);
-  renderList(growthList, course.growth || []);
-  renderTags(skillTags, course.skills);
-  renderTags(naceTags, course.nace);
+  renderList(growthList, course.growth && course.growth.length ? course.growth : getDefaultGrowth(course));
   }
 
-if (academicToggle) {
-  academicToggle.addEventListener('click', () => {
-    currentLanguageMode = 'academic';
+if (outcomesToggle) {
+  outcomesToggle.addEventListener('click', () => {
+    currentLanguageMode = 'outcomes';
     updateResumeOutput();
   });
 }
@@ -1857,20 +1921,23 @@ if (degreeSelect && courseSelect) {
   populateCourses();
 }
 
-const moLogo = document.querySelector('.mo-logo');
-const heroEgg = document.getElementById('heroEasterEgg');
-const closeHeroEgg = document.getElementById('closeHeroEgg');
 
-if (moLogo && heroEgg) {
-  moLogo.addEventListener('click', () => {
-    heroEgg.classList.remove('hidden');
-    heroEgg.setAttribute('aria-hidden', 'false');
+// NACE 8 Audit Helper
+function auditNaceCompetencies() {
+  const allowed = new Set(OFFICIAL_NACE_COMPETENCIES);
+
+  Object.values(resumeData).forEach((category) => {
+    Object.values(category.courses).forEach((course) => {
+      (course.nace || []).forEach((competency) => {
+        if (!allowed.has(competency)) {
+          console.warn(
+            `Non-standard NACE competency found in ${course.title}: ${competency}`
+          );
+        }
+      });
+    });
   });
 }
 
-if (closeHeroEgg) {
-  closeHeroEgg.addEventListener('click', () => {
-    heroEgg.classList.add('hidden');
-    heroEgg.setAttribute('aria-hidden', 'true');
-  });
-}
+auditNaceCompetencies();
+

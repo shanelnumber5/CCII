@@ -196,31 +196,66 @@
       </div>
 
       <div class="resume-builder-shell">
-        <aside class="resume-controls" aria-label="Course selection controls">
-          <div class="control-card">
-            <label for="degreeSelect">General Education Area</label>
-            <select id="degreeSelect">
-              <option value="communication">Communication</option>
-              <option value="mathematics">Mathematics</option>
-              <option value="humanitiesFineArts">Humanities / Fine Arts</option>
-              <option value="socialSciencesHistory">Social Sciences / History</option>
-              <option value="culturalDiversity">Cultural Diversity</option>
-              <option value="computerSkills">Computer Skills / Usage</option>
-              <option value="concentrationAHSS">Concentration: Arts, Humanities, and Social Sciences</option>
-            </select>
+  <aside class="resume-controls" aria-label="Course selection controls">
+    <div class="control-card">
+      <label for="degreeSelect">General Education Area</label>
+      <select id="degreeSelect">
+        <option value="communication">Communication</option>
+        <option value="mathematics">Mathematics</option>
+        <option value="humanitiesFineArts">Humanities / Fine Arts</option>
+        <option value="socialSciencesHistory">Social Sciences / History</option>
+        <option value="culturalDiversity">Cultural Diversity</option>
+        <option value="computerSkills">Computer Skills / Usage</option>
+        <option value="concentrationAHSS">Concentration: Arts, Humanities, and Social Sciences</option>
+      </select>
 
-            <label for="courseSelect">Course</label>
-            <select id="courseSelect"></select>
-          </div>
+      <label for="courseSelect">Course</label>
+      <select id="courseSelect"></select>
+    </div>
 
-          <div class="translation-note">
-            <h3>What this section does</h3>
-            <p>
-              This builder translates course activities into student-facing language for resumes, interviews,
-              advising conversations, and career planning.
-            </p>
-          </div>
-        </aside>
+    <div class="translation-note">
+  <h3>What this section does</h3>
+
+  <p>
+    This builder helps translate academic experiences into language students
+    can use for resumes, interviews, advising conversations, transfer pathways,
+    and career planning.
+  </p>
+
+  <p>
+    The examples show how coursework can support transferable skills,
+    personal growth, reflection, and career readiness across different
+    learning experiences.
+  </p>
+
+  <div class="sidebar-tag-section">
+    <h3>Transferable Skills</h3>
+
+    <div class="tag-group">
+      <span class="tag">Communication</span>
+      <span class="tag">Critical Thinking</span>
+      <span class="tag">Problem Solving</span>
+      <span class="tag">Collaboration</span>
+      <span class="tag">Adaptability</span>
+    </div>
+  </div>
+
+  <div class="sidebar-tag-section">
+    <h3>NACE 8 Competencies</h3>
+
+    <div class="tag-group">
+      <span class="tag nace-tag">Career & Self-Development</span>
+      <span class="tag nace-tag">Communication</span>
+      <span class="tag nace-tag">Critical Thinking</span>
+      <span class="tag nace-tag">Equity & Inclusion</span>
+      <span class="tag nace-tag">Leadership</span>
+      <span class="tag nace-tag">Professionalism</span>
+      <span class="tag nace-tag">Teamwork</span>
+      <span class="tag nace-tag">Technology</span>
+    </div>
+  </div>
+</div>
+</aside>
 
         <article class="resume-output-card">
           <div class="course-header">
@@ -244,31 +279,21 @@
           </div>
 
           <div class="resume-content-grid">
-            <div class="resume-list-panel">
+            <section class="resume-list-panel resume-panel-primary">
               <h4>Resume Bullet Examples</h4>
               <ul id="resumeBullets" class="resume-bullets"></ul>
-            </div>
+            </section>
 
-            <div class="resume-list-panel">
+            <section class="resume-list-panel resume-panel-secondary">
               <h4>Reflection Prompts</h4>
               <ul id="reflectionPrompts" class="resume-bullets"></ul>
-            </div>
+            </section>
           </div>
 
-          <section class="growth-section">
-            <h3>Personal Growth & Identity Development</h3>
-            <ul id="growthList"></ul>
+          <section class="resume-list-panel growth-panel">
+            <h4>Personal Growth & Identity Development</h4>
+            <ul id="growthList" class="resume-bullets"></ul>
           </section>
-
-          <div class="tag-section">
-            <h4>Transferable Skills</h4>
-            <div id="skillTags" class="tag-list"></div>
-          </div>
-
-          <div class="tag-section">
-            <h4>NACE Competency Connections</h4>
-            <div id="naceTags" class="tag-list"></div>
-          </div>
         </article>
       </div>
       <div class="mo-tip">
