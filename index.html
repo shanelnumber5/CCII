@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0E3356" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>GFC MSU Student Success Pathway Builder</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -24,15 +28,17 @@
   </header>
 
   <nav class="site-nav" aria-label="Page sections">
-    <a href="#overview">Overview</a>
-    <a href="#pathway">Journey</a>
-    <a href="#barriers">Barriers</a>
-    <a href="#voices">Voices</a>
-    <a href="#resume-builder">Resume Builder</a>
-    <a href="#nace">NACE 8</a>
-    <a href="#reflection">Reflection</a>
-    <a href="#napkin">Napkin Pitch</a>
-    <a href="#action-plan">Action Plan</a>
+    <div class="site-nav-inner">
+      <a href="#overview">Overview</a>
+      <a href="#pathway">Journey</a>
+      <a href="#barriers">Barriers</a>
+      <a href="#voices">Voices</a>
+      <a href="#resume-builder">Resume Builder</a>
+      <a href="#nace">NACE 8</a>
+      <a href="#reflection">Reflection</a>
+      <a href="#napkin">Napkin Pitch</a>
+      <a href="#action-plan">Action Plan</a>
+    </div>
   </nav>
 
   <main id="main" class="page">
@@ -603,8 +609,5 @@
 
   <script src="script.js"></script>
   <script src="mo-easter-egg.js"></script>
-  <audio id="heroTheme" preload="auto">
-  <source src="audio/mo-theme.mp3" type="audio/mpeg">
-</audio>
 </body>
 </html>
