@@ -9,19 +9,29 @@ Updated package with:
 - Reflection prompts
 - Regular Mo logo used in visible page areas
 - Superhero Mo reserved for the hidden easter egg
-- Mo Tip callout using the regular mascot logo
+- Optional epic background music for the Mo easter egg
 
 ## How to Use
 
 Open `index.html` in a browser.
 
-## Image Files Needed
+## Required Image Files
 
 Place these files in the `images` folder:
 
 - `mo-logo.png`
 - `mo-superhero.png`
 
+## Audio Setup
+
+Place your downloaded music file here:
+
+```text
+audio/mo-theme.mp3
+```
+
+The easter egg is already wired to use that file. If the file is missing, the popup still works without music.
+
 ## Easter Egg
 
-Click the regular Mo logo in the header to open the hidden Captain Transferable Skills easter egg.
+Click the regular Mo logo in the header to open the hidden Captain Transferable Skills easter egg. The music starts when the popup opens and stops when the popup closes.

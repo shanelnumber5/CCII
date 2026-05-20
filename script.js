@@ -70,7 +70,13 @@ const resumeData = {
           'What type of writing from this course could demonstrate your ability to communicate professionally?',
           'How did revision or feedback improve your final work?',
           'What evidence from this course could support a resume, interview, or transfer application?'
-        ]
+        ],
+        growth: [
+          'Developed confidence communicating ideas clearly and effectively.',
+          'Strengthened personal voice through writing, revision, and reflection.',
+          'Built persistence through drafting, feedback, and improvement.',
+          'Recognized writing as a tool for self-expression, advocacy, and professional growth.'
+        ],
       },
 
       'COMX 111': {
@@ -102,7 +108,13 @@ const resumeData = {
           'What presentation best shows your growth as a speaker?',
           'How did you adapt your message for audience, purpose, or format?',
           'Where might you use public speaking in a workplace, interview, or leadership setting?'
-        ]
+        ],
+        growth: [
+          'Built confidence speaking in front of groups and unfamiliar audiences.',
+          'Strengthened self-awareness through presentation practice and feedback.',
+          'Developed communication skills useful for leadership, advocacy, and collaboration.',
+          'Learned to manage anxiety and adapt communication under pressure.'
+        ],
       },
 
       'COMX 115': {
@@ -134,7 +146,13 @@ const resumeData = {
           'How did this course change the way you communicate with others?',
           'What examples from this course demonstrate collaboration or conflict resolution skills?',
           'Where could interpersonal communication skills help you in future workplace or leadership situations?'
-        ]
+        ],
+        growth: [
+          'Built confidence speaking in front of groups and unfamiliar audiences.',
+          'Strengthened self-awareness through presentation practice and feedback.',
+          'Developed communication skills useful for leadership, advocacy, and collaboration.',
+          'Learned to manage anxiety and adapt communication under pressure.'
+        ],
       }
     }
   },
@@ -234,7 +252,13 @@ const resumeData = {
         bullets: ['Analyzed complex texts and communicated evidence-based interpretations.', 'Strengthened written communication, critical thinking, and cultural awareness.', 'Developed perspective-taking skills through interpretation of human experiences.'],
         skills: ['Textual Analysis', 'Written Communication', 'Critical Thinking', 'Interpretation', 'Cultural Awareness'],
         nace: ['Communication', 'Critical Thinking', 'Equity & Inclusion'],
-        reflection: ['What text or assignment best shows your analytical thinking?', 'How did literature help you understand different perspectives?', 'How could interpretation skills apply in a workplace?']
+        reflection: ['What text or assignment best shows your analytical thinking?', 'How did literature help you understand different perspectives?', 'How could interpretation skills apply in a workplace?'],
+        growth: [
+          'Developed greater empathy through engagement with diverse stories and perspectives.',
+          'Strengthened personal reflection through interpretation and discussion.',
+          'Built confidence analyzing complex themes and human experiences.',
+          'Connected literature to identity, values, and social understanding.'
+        ],
       },
 
       'LIT 163': {
@@ -247,7 +271,13 @@ const resumeData = {
         bullets: ['Analyzed speculative texts to evaluate social, ethical, and cultural questions.', 'Strengthened creative thinking, interpretation, and written communication skills.', 'Connected imaginative scenarios to real-world problem solving and human concerns.'],
         skills: ['Creative Thinking', 'Critical Thinking', 'Cultural Analysis', 'Written Communication', 'Interpretation'],
         nace: ['Critical Thinking', 'Communication', 'Creativity'],
-        reflection: ['How did speculative fiction help you think differently about society or technology?', 'What assignment showed your creative or analytical thinking?', 'How could imaginative thinking help solve workplace problems?']
+        reflection: ['How did speculative fiction help you think differently about society or technology?', 'What assignment showed your creative or analytical thinking?', 'How could imaginative thinking help solve workplace problems?'],
+        growth: [
+          'Developed greater empathy through engagement with diverse stories and perspectives.',
+          'Strengthened personal reflection through interpretation and discussion.',
+          'Built confidence analyzing complex themes and human experiences.',
+          'Connected literature to identity, values, and social understanding.'
+        ],
       },
 
       'LIT 270': {
@@ -273,7 +303,13 @@ const resumeData = {
         bullets: ['Analyzed cultural narratives to understand values, identity, and worldview.', 'Strengthened cross-cultural awareness, interpretation, and communication skills.', 'Applied evidence-based analysis to symbolic and historical material.'],
         skills: ['Cultural Awareness', 'Interpretation', 'Critical Thinking', 'Communication', 'Perspective Taking'],
         nace: ['Equity & Inclusion', 'Communication', 'Critical Thinking'],
-        reflection: ['How did mythology help you understand different cultures or values?', 'What story or symbol helped you think differently?', 'How might cultural awareness help you in the workplace?']
+        reflection: ['How did mythology help you understand different cultures or values?', 'What story or symbol helped you think differently?', 'How might cultural awareness help you in the workplace?'],
+        growth: [
+          'Developed greater empathy through engagement with diverse stories and perspectives.',
+          'Strengthened personal reflection through interpretation and discussion.',
+          'Built confidence analyzing complex themes and human experiences.',
+          'Connected literature to identity, values, and social understanding.'
+        ],
       },
 
       'LSH 201': {
@@ -300,7 +336,13 @@ const resumeData = {
         bullets: ['Analyzed Native American literature through cultural, historical, and social contexts.', 'Strengthened respectful communication, cultural awareness, and perspective-taking skills.', 'Applied critical thinking to diverse voices, identities, and lived experiences.'],
         skills: ['Cultural Awareness', 'Respectful Communication', 'Critical Thinking', 'Interpretation', 'Equity Awareness'],
         nace: ['Equity & Inclusion', 'Communication', 'Critical Thinking'],
-        reflection: ['How did this course deepen your understanding of Native American voices or experiences?', 'What text helped you think differently about culture or history?', 'How could respectful cultural communication matter in your future work?']
+        reflection: ['How did this course deepen your understanding of Native American voices or experiences?', 'What text helped you think differently about culture or history?', 'How could respectful cultural communication matter in your future work?'],
+        growth: [
+          'Developed deeper awareness of Indigenous histories, identities, and perspectives.',
+          'Strengthened respectful communication and cultural humility.',
+          'Reflected on systems, identity, and community relationships.',
+          'Built perspective-taking skills through engagement with diverse lived experiences.'
+        ],
       },
 
       'PHL 101': {
@@ -339,7 +381,13 @@ const resumeData = {
         bullets: ['Analyzed gender, equality, and social systems through evidence-based discussion.', 'Strengthened inclusive communication, cultural awareness, and critical thinking skills.', 'Developed perspective-taking skills relevant to diverse professional environments.'],
         skills: ['Equity Awareness', 'Inclusive Communication', 'Cultural Awareness', 'Critical Thinking', 'Collaboration'],
         nace: ['Equity & Inclusion', 'Communication', 'Critical Thinking'],
-        reflection: ['How did this course shape your understanding of equity or identity?', 'What concept could help you work more effectively with others?', 'How might inclusive communication matter in your future workplace?']
+        reflection: ['How did this course shape your understanding of equity or identity?', 'What concept could help you work more effectively with others?', 'How might inclusive communication matter in your future workplace?'],
+        growth: [
+          'Strengthened awareness of identity, equity, and lived experience.',
+          'Developed confidence engaging with complex social and cultural conversations.',
+          'Built perspective-taking and inclusive communication skills.',
+          'Reflected on personal assumptions, systems, and social responsibility.'
+        ],
       },
 
       'ARTH 160': {
@@ -365,7 +413,13 @@ const resumeData = {
         bullets: ['Applied design principles and creative problem-solving to visual projects.', 'Strengthened creativity, attention to detail, and visual communication skills.', 'Used critique and revision to improve project quality and decision-making.'],
         skills: ['Creativity', 'Design Thinking', 'Visual Communication', 'Problem Solving', 'Revision'],
         nace: ['Creativity', 'Communication', 'Critical Thinking'],
-        reflection: ['What project best shows your creative problem-solving?', 'How did feedback improve your work?', 'How could design thinking apply outside of art?']
+        reflection: ['What project best shows your creative problem-solving?', 'How did feedback improve your work?', 'How could design thinking apply outside of art?'],
+        growth: [
+          'Developed confidence expressing ideas creatively through visual work.',
+          'Strengthened resilience through critique, revision, and experimentation.',
+          'Learned to view mistakes and iteration as part of the creative process.',
+          'Built personal voice and creative problem-solving confidence.'
+        ],
       },
 
       'MUSI 207': {
@@ -947,7 +1001,13 @@ const resumeData = {
           'What psychology concept helped you better understand yourself or others?',
           'How could understanding behavior support teamwork or leadership?',
           'What assignment could demonstrate your people-centered thinking?'
-        ]
+        ],
+        growth: [
+        'Developed greater self-awareness and understanding of human behavior.',
+        'Strengthened empathy and perspective-taking through psychological concepts.',
+        'Connected course concepts to personal relationships, motivation, and communication.',
+        'Built confidence analyzing human behavior through evidence-based thinking.'
+      ],
       },
 
       'PSYX 230': {
@@ -976,7 +1036,12 @@ const resumeData = {
           'What life stage or developmental concept helped you understand people differently?',
           'How could developmental awareness support your future career?',
           'Where might empathy and perspective-taking matter professionally?'
-        ]
+        ],growth: [
+        'Developed empathy and understanding for people across different life stages.',
+        'Strengthened awareness of how experiences and environments shape development.',
+        'Connected developmental concepts to personal growth and relationships.',
+        'Built perspective-taking skills useful for leadership, caregiving, and communication.'
+      ],
       },
 
       'PSYX 240': {
@@ -1005,7 +1070,13 @@ const resumeData = {
           'How did this course shape your understanding of mental health?',
           'What concept helped you think more respectfully about human behavior?',
           'How could mental health literacy support workplace or community interactions?'
-        ]
+        ],
+        growth: [
+          'Developed greater empathy and understanding surrounding mental health experiences.',
+          'Strengthened awareness of stigma, identity, and respectful communication.',
+          'Built confidence discussing mental health topics thoughtfully and responsibly.',
+          'Learned to approach complex human experiences with compassion and evidence-based thinking.'
+        ],
       },
 
       'SOCI 101': {
@@ -1375,7 +1446,13 @@ const resumeData = {
           'How did learning ASL change your understanding of communication?',
           'What communication skill from this course could help professionally?',
           'How could accessibility awareness support future workplace success?'
-        ]
+        ],
+        growth: [
+          'Developed confidence communicating in new and unfamiliar ways.',
+          'Strengthened awareness of accessibility, inclusion, and diverse communication needs.',
+          'Built adaptability and active listening skills through visual communication.',
+          'Expanded understanding of Deaf culture and inclusive interaction.'
+        ],
       },
 
       'SPNS 101': {
@@ -1453,6 +1530,12 @@ const resumeData = {
           'How did continued language study strengthen your communication skills?',
           'What communication challenge helped you grow most?',
           'How could multilingual communication help professionally?'
+        ],
+        growth: [
+          'Built confidence communicating across language and cultural differences.',
+          'Strengthened adaptability and persistence through language learning.',
+          'Developed greater cultural awareness and curiosity about diverse perspectives.',
+          'Recognized communication as a bridge for connection and belonging.'
         ]
       }
     }
@@ -1558,7 +1641,13 @@ const resumeData = {
             'How did this course change your understanding of artificial intelligence?',
             'What ethical or technological issue stood out most to you?',
             'How could AI literacy support your future career or professional development?'
-          ]
+          ],
+          growth: [
+            'Developed greater confidence engaging with emerging technologies and AI systems.',
+            'Strengthened awareness of ethical decision-making in digital environments.',
+            'Built adaptability and curiosity around technological change.',
+            'Reflected on how technology shapes communication, learning, and society.'
+          ],
         }
 
       }
@@ -1743,9 +1832,10 @@ if (courseDescription) {
   renderLanguageContent(course);
   renderList(resumeBullets, course.bullets);
   renderList(reflectionPrompts, course.reflection);
+  renderList(growthList, course.growth || []);
   renderTags(skillTags, course.skills);
   renderTags(naceTags, course.nace);
-}
+  }
 
 if (academicToggle) {
   academicToggle.addEventListener('click', () => {

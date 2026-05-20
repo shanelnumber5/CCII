@@ -552,41 +552,6 @@ li { margin: 5px 0; }
   }
 }
 
-/* Mo Tip Callout */
-.mo-tip {
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
-  background: #eef7fd;
-  border-left: 6px solid #2f8dbf;
-  padding: 20px;
-  border-radius: 18px;
-  margin: 28px 0 0;
-}
-
-.mo-tip-image {
-  width: 90px;
-  height: auto;
-  flex-shrink: 0;
-}
-
-.mo-tip-content h4 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #12395a;
-  font-size: 1.15rem;
-}
-
-.mo-tip-content p {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-.mo-tip-content p:last-child {
-  margin-bottom: 0;
-}
-
-
 /* Superhero Mo Easter Egg */
 .hero-easter-egg {
   position: fixed;
@@ -692,6 +657,51 @@ li { margin: 5px 0; }
 }
 
 @media (max-width: 700px) {
+  .hero-card {
+    padding: 28px 20px;
+  }
+
+  .superhero-mo {
+    width: 180px;
+  }
+}
+
+
+/* Mo Tip Callout */
+.mo-tip {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: #eef7fd;
+  border-left: 6px solid #2f8dbf;
+  padding: 20px;
+  border-radius: 18px;
+  margin: 28px 0 0;
+}
+
+.mo-tip-image {
+  width: 90px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.mo-tip-content h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #12395a;
+  font-size: 1.15rem;
+}
+
+.mo-tip-content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.mo-tip-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
   .mo-tip {
     flex-direction: column;
     align-items: center;
@@ -700,13 +710,5 @@ li { margin: 5px 0; }
 
   .mo-tip-image {
     width: 72px;
-  }
-
-  .hero-card {
-    padding: 28px 20px;
-  }
-
-  .superhero-mo {
-    width: 180px;
   }
 }

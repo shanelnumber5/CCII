@@ -61,7 +61,7 @@
         <button class="journey-node active" type="button"
           data-title="Awareness"
           data-need="Students need clear, early information about programs, costs, expectations, and opportunities."
-          data-response="Great Falls College MSU can improve visibility through outreach, pathway clarity, advising access, and culturally responsive communication.">
+          data-response="GFC can improve visibility through outreach, pathway clarity, advising access, and culturally responsive communication.">
           <span class="journey-icon" aria-hidden="true">🧭</span>
           <span class="journey-label">Awareness</span>
           <span class="journey-subtitle">Clear Pathways</span>
@@ -72,7 +72,7 @@
         <button class="journey-node" type="button"
           data-title="Enrollment"
           data-need="Students benefit from onboarding, advising, financial guidance, and early relationship-building."
-          data-response="Great Falls College MSU can reduce confusion through coordinated systems, simplified processes, and early student support.">
+          data-response="GFC can reduce confusion through coordinated systems, simplified processes, and early student support.">
           <span class="journey-icon" aria-hidden="true">📝</span>
           <span class="journey-label">Enrollment</span>
           <span class="journey-subtitle">Early Support</span>
@@ -94,7 +94,7 @@
         <button class="journey-node" type="button"
           data-title="Completion"
           data-need="Students need coherent systems, consistent expectations, and visible progress toward goals."
-          data-response="Great Falls College MSU can reduce fragmentation through shared language, coordination, and aligned support structures.">
+          data-response="GFC can reduce fragmentation through shared language, coordination, and aligned support structures.">
           <span class="journey-icon" aria-hidden="true">🎓</span>
           <span class="journey-label">Completion</span>
           <span class="journey-subtitle">Coherent Systems</span>
@@ -125,7 +125,7 @@
 
           <div class="journey-detail-block">
             <h4>Institutional Response</h4>
-            <p id="journeyResponse">Institutions can improve visibility through outreach, pathway clarity, advising access, and culturally responsive communication.</p>
+            <p id="journeyResponse">GFC can improve visibility through outreach, pathway clarity, advising access, and culturally responsive communication.</p>
           </div>
         </div>
       </div>
@@ -150,7 +150,13 @@
         <article class="flip-card" tabindex="0">
           <div class="flip-inner">
             <div class="flip-front"><h3>Invisible Skills</h3><p>Students practice valuable skills without knowing how to name them.</p><span>Click to reveal response</span></div>
-            <div class="flip-back"><h3>Design Response</h3><p>Use reflection prompts, resume language, and NACE-aligned skill translation to help students articulate what they can do.</p></div>
+            <div class="flip-back"><h3>Design Response</h3><p>
+              GFC can support students by embedding reflection prompts, transferable skill
+              language, and resume-building supports directly within courses. By helping
+              students connect assignments and classroom experiences to communication,
+              collaboration, leadership, and problem-solving skills, these supports make
+              learning more visible, meaningful, and career-connected.
+            </p></div>
           </div>
         </article>
       </div>
@@ -163,7 +169,12 @@
         <article class="flip-card" tabindex="0">
           <div class="flip-inner">
             <div class="flip-front"><h3>Student Question</h3><p>Why does this course matter for my future?</p><span>Click to reveal translation</span></div>
-            <div class="flip-back"><h3>Translation</h3><p>This course helps students build communication, reasoning, and problem-solving skills used across transfer programs and workplace settings.</p></div>
+            <div class="flip-back"><h3>Translation</h3><p>
+            GFC is committed to co-designing learning with students and employer partners
+            so pathways, coursework, and skill development opportunities reflect both
+            student experiences and workforce needs. This collaborative approach helps
+            ensure learning remains relevant, connected, and responsive to all stakeholders.
+          </p></div>
           </div>
         </article>
         <article class="flip-card" tabindex="0">
@@ -242,6 +253,11 @@
               <ul id="reflectionPrompts" class="resume-bullets"></ul>
             </div>
           </div>
+
+          <section class="growth-section">
+            <h3>Personal Growth & Identity Development</h3>
+            <ul id="growthList"></ul>
+          </section>
 
           <div class="tag-section">
             <h4>Transferable Skills</h4>
@@ -340,6 +356,10 @@
 
 
   <div id="heroEasterEgg" class="hero-easter-egg hidden" aria-hidden="true">
+    <audio id="heroTheme" preload="auto">
+      <source src="audio/mo-theme.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="hero-card" role="dialog" aria-modal="true" aria-labelledby="heroEggTitle">
       <button class="hero-close" id="closeHeroEgg" type="button" aria-label="Close easter egg">
         ×
@@ -374,8 +394,12 @@
       </p>
     </div>
   </div>
-  <div id="heroEasterEgg" class="hero-easter-egg hidden"></div>
+
 
   <script src="script.js"></script>
+  <script src="mo-easter-egg.js"></script>
+  <audio id="heroTheme" preload="auto">
+  <source src="audio/mo-theme.mp3" type="audio/mpeg">
+</audio>
 </body>
 </html>
