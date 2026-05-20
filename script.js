@@ -46,7 +46,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Fall, Spring',
         description: 'Develops college-level writing, rhetorical awareness, critical thinking, research, organization, revision, and evidence-based communication skills.',
-        academicLanguage: [
+        learningOutcomes: [
           'Developed academic writing through expository, argumentative, and research-based assignments.',
           'Practiced rhetorical analysis, organization, revision, and evidence integration.',
           'Strengthened critical reading, drafting, editing, and source evaluation skills.',
@@ -84,7 +84,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Fall, Spring, Summer',
         description: 'Introduces public speaking preparation, organization, delivery, audience awareness, and speech presentation strategies in multiple speaking formats.',
-        academicLanguage: [
+        learningOutcomes: [
           'Prepared and delivered speeches in multiple presentation formats.',
           'Developed organization, audience awareness, and oral communication strategies.',
           'Practiced verbal communication through structured speaking assignments.',
@@ -122,7 +122,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Fall, Spring, Summer',
         description: 'Explores interpersonal communication theory and practice including listening, perception, identity, conflict management, relationship development, and communication across diverse contexts.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined interpersonal communication theories related to relationships, identity, and human interaction.',
           'Practiced active listening, conflict management, and communication analysis skills.',
           'Analyzed communication patterns and relational dynamics in personal and professional settings.',
@@ -165,7 +165,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Fall, Spring',
         description: 'Introduces mathematical reasoning, quantitative literacy, problem solving, and real-world mathematical applications.',
-        academicLanguage: [
+        learningOutcomes: [
           'Applied mathematical reasoning to analyze real-world problems and scenarios.',
           'Practiced quantitative literacy and interpretation of numerical information.',
           'Developed problem-solving strategies using mathematical models and logic.',
@@ -197,7 +197,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Fall, Spring',
         description: 'Introduces statistical reasoning, data analysis, probability, interpretation of quantitative information, and evidence-based decision making.',
-        academicLanguage: [
+        learningOutcomes: [
           'Applied statistical methods to analyze and interpret quantitative data.',
           'Practiced probability, data visualization, and evidence-based reasoning.',
           'Interpreted statistical findings and evaluated the reliability of data sources.',
@@ -234,7 +234,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Explores ethical decision-making, social responsibility, and the role of business in society.',
-        academicLanguage: ['Examined ethical issues in business and organizational decision-making.', 'Analyzed social responsibility from individual, organizational, and community perspectives.', 'Evaluated real-world situations using ethical reasoning and evidence.'],
+        learningOutcomes: ['Examined ethical issues in business and organizational decision-making.', 'Analyzed social responsibility from individual, organizational, and community perspectives.', 'Evaluated real-world situations using ethical reasoning and evidence.'],
         workforceLanguage: ['Applied ethical reasoning to workplace and organizational scenarios.', 'Evaluated decisions through social responsibility, accountability, and stakeholder impact.', 'Strengthened professional judgment and responsible decision-making.'],
         bullets: ['Applied ethical reasoning to business and workplace scenarios.', 'Analyzed organizational decisions through social responsibility and stakeholder impact.', 'Strengthened professional judgment, accountability, and decision-making skills.'],
         skills: ['Ethical Reasoning', 'Professional Judgment', 'Social Responsibility', 'Critical Thinking', 'Decision Making'],
@@ -247,7 +247,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces literary analysis, interpretation, and communication through reading and discussion of literature.',
-        academicLanguage: ['Analyzed literary texts using interpretation and evidence.', 'Practiced close reading, discussion, and written analysis.', 'Explored how stories reflect human experience and culture.'],
+        learningOutcomes: ['Analyzed literary texts using interpretation and evidence.', 'Practiced close reading, discussion, and written analysis.', 'Explored how stories reflect human experience and culture.'],
         workforceLanguage: ['Interpreted complex information and communicated evidence-based insights.', 'Strengthened analytical thinking, written communication, and perspective-taking.', 'Developed the ability to identify themes, context, and meaning in complex material.'],
         bullets: ['Analyzed complex texts and communicated evidence-based interpretations.', 'Strengthened written communication, critical thinking, and cultural awareness.', 'Developed perspective-taking skills through interpretation of human experiences.'],
         skills: ['Textual Analysis', 'Written Communication', 'Critical Thinking', 'Interpretation', 'Cultural Awareness'],
@@ -266,7 +266,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Explores fantasy and science fiction literature through analysis of imagination, society, culture, and human possibility.',
-        academicLanguage: ['Analyzed speculative literature through theme, genre, and cultural context.', 'Explored how fantasy and science fiction reflect social questions and human concerns.', 'Practiced interpretation, discussion, and written analysis.'],
+        learningOutcomes: ['Analyzed speculative literature through theme, genre, and cultural context.', 'Explored how fantasy and science fiction reflect social questions and human concerns.', 'Practiced interpretation, discussion, and written analysis.'],
         workforceLanguage: ['Strengthened creative thinking, systems thinking, and interpretation of complex ideas.', 'Analyzed imagined scenarios to explore real-world social, ethical, and technological questions.', 'Developed communication and critical thinking through genre analysis.'],
         bullets: ['Analyzed speculative texts to evaluate social, ethical, and cultural questions.', 'Strengthened creative thinking, interpretation, and written communication skills.', 'Connected imaginative scenarios to real-world problem solving and human concerns.'],
         skills: ['Creative Thinking', 'Critical Thinking', 'Cultural Analysis', 'Written Communication', 'Interpretation'],
@@ -285,7 +285,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Examines relationships between film and literature through analysis, adaptation, narrative, and interpretation.',
-        academicLanguage: ['Compared literary and film texts through analysis of narrative, theme, and adaptation.', 'Practiced visual and textual interpretation.', 'Communicated ideas through discussion and written analysis.'],
+        learningOutcomes: ['Compared literary and film texts through analysis of narrative, theme, and adaptation.', 'Practiced visual and textual interpretation.', 'Communicated ideas through discussion and written analysis.'],
         workforceLanguage: ['Analyzed information across multiple media formats and communicated insights clearly.', 'Strengthened visual literacy, interpretation, and comparative analysis.', 'Evaluated how messages change based on format, audience, and purpose.'],
         bullets: ['Compared written and visual texts using evidence-based analysis.', 'Strengthened media literacy, interpretation, and communication skills.', 'Evaluated how format and audience shape meaning and message design.'],
         skills: ['Media Literacy', 'Visual Analysis', 'Critical Thinking', 'Communication', 'Comparative Analysis'],
@@ -298,7 +298,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Explores mythology, cultural narratives, symbolism, and human meaning across traditions.',
-        academicLanguage: ['Analyzed myths through cultural, historical, and symbolic frameworks.', 'Explored how stories shape identity, values, and worldview.', 'Practiced interpretation and evidence-based discussion.'],
+        learningOutcomes: ['Analyzed myths through cultural, historical, and symbolic frameworks.', 'Explored how stories shape identity, values, and worldview.', 'Practiced interpretation and evidence-based discussion.'],
         workforceLanguage: ['Strengthened cultural awareness, interpretation, and communication across different perspectives.', 'Analyzed how narratives influence values, identity, and decision-making.', 'Developed perspective-taking and cross-cultural understanding.'],
         bullets: ['Analyzed cultural narratives to understand values, identity, and worldview.', 'Strengthened cross-cultural awareness, interpretation, and communication skills.', 'Applied evidence-based analysis to symbolic and historical material.'],
         skills: ['Cultural Awareness', 'Interpretation', 'Critical Thinking', 'Communication', 'Perspective Taking'],
@@ -317,7 +317,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces humanities disciplines through culture, history, art, ideas, and human experience.',
-        academicLanguage: ['Explored human culture, history, ideas, and creative expression.', 'Practiced interdisciplinary analysis across humanities fields.', 'Connected cultural artifacts to historical and social contexts.'],
+        learningOutcomes: ['Explored human culture, history, ideas, and creative expression.', 'Practiced interdisciplinary analysis across humanities fields.', 'Connected cultural artifacts to historical and social contexts.'],
         workforceLanguage: ['Strengthened cultural awareness, interdisciplinary thinking, and communication skills.', 'Analyzed human experiences and ideas across historical and social contexts.', 'Developed perspective-taking useful for diverse professional settings.'],
         bullets: ['Applied interdisciplinary thinking to analyze culture, history, and human experience.', 'Strengthened cultural awareness, communication, and critical thinking skills.', 'Connected ideas across disciplines to better understand social and professional contexts.'],
         skills: ['Interdisciplinary Thinking', 'Cultural Awareness', 'Critical Thinking', 'Communication', 'Contextual Analysis'],
@@ -331,7 +331,7 @@ const resumeData = {
         term: 'Varies',
         heritage: true,
         description: 'Examines Native American literature, storytelling, culture, identity, and historical context.',
-        academicLanguage: ['Analyzed Native American literary works through cultural and historical context.', 'Explored storytelling, identity, sovereignty, and lived experience.', 'Practiced respectful interpretation and evidence-based communication.'],
+        learningOutcomes: ['Analyzed Native American literary works through cultural and historical context.', 'Explored storytelling, identity, sovereignty, and lived experience.', 'Practiced respectful interpretation and evidence-based communication.'],
         workforceLanguage: ['Strengthened cultural awareness, respectful communication, and perspective-taking.', 'Developed understanding of Native American histories, identities, and contemporary experiences.', 'Applied critical thinking to diverse voices and cultural contexts.'],
         bullets: ['Analyzed Native American literature through cultural, historical, and social contexts.', 'Strengthened respectful communication, cultural awareness, and perspective-taking skills.', 'Applied critical thinking to diverse voices, identities, and lived experiences.'],
         skills: ['Cultural Awareness', 'Respectful Communication', 'Critical Thinking', 'Interpretation', 'Equity Awareness'],
@@ -350,7 +350,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces philosophical questions, reasoning, argument, knowledge, reality, and values.',
-        academicLanguage: ['Examined philosophical arguments and major questions about knowledge, reality, and values.', 'Practiced logical reasoning, questioning, and evidence-based argumentation.', 'Analyzed complex ideas through discussion and writing.'],
+        learningOutcomes: ['Examined philosophical arguments and major questions about knowledge, reality, and values.', 'Practiced logical reasoning, questioning, and evidence-based argumentation.', 'Analyzed complex ideas through discussion and writing.'],
         workforceLanguage: ['Strengthened logical reasoning, problem solving, and careful evaluation of ideas.', 'Developed the ability to question assumptions and communicate reasoned arguments.', 'Applied critical thinking to complex and abstract problems.'],
         bullets: ['Analyzed complex ideas using logical reasoning and evidence-based argumentation.', 'Strengthened critical thinking, questioning, and written communication skills.', 'Evaluated assumptions and developed reasoned responses to complex problems.'],
         skills: ['Logical Reasoning', 'Critical Thinking', 'Argumentation', 'Problem Solving', 'Communication'],
@@ -363,7 +363,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces ethical theories, moral reasoning, and application of ethics to real-world situations.',
-        academicLanguage: ['Examined ethical theories and moral reasoning frameworks.', 'Applied ethical analysis to real-world situations and dilemmas.', 'Practiced argumentation, reflection, and evidence-based discussion.'],
+        learningOutcomes: ['Examined ethical theories and moral reasoning frameworks.', 'Applied ethical analysis to real-world situations and dilemmas.', 'Practiced argumentation, reflection, and evidence-based discussion.'],
         workforceLanguage: ['Applied ethical reasoning to complex decisions and workplace scenarios.', 'Strengthened professional judgment, accountability, and decision-making skills.', 'Evaluated situations from multiple perspectives before reaching conclusions.'],
         bullets: ['Applied ethical reasoning to real-world and professional decision-making scenarios.', 'Strengthened judgment, accountability, and critical thinking skills.', 'Evaluated complex situations using evidence, values, and multiple perspectives.'],
         skills: ['Ethical Reasoning', 'Decision Making', 'Professional Judgment', 'Critical Thinking', 'Perspective Taking'],
@@ -376,7 +376,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Explores gender, equality, identity, power, and social structures through interdisciplinary analysis.',
-        academicLanguage: ['Analyzed gender and equality through social, historical, and cultural frameworks.', 'Examined systems of power, identity, and representation.', 'Practiced critical discussion and evidence-based analysis.'],
+        learningOutcomes: ['Analyzed gender and equality through social, historical, and cultural frameworks.', 'Examined systems of power, identity, and representation.', 'Practiced critical discussion and evidence-based analysis.'],
         workforceLanguage: ['Strengthened equity-minded thinking, cultural awareness, and inclusive communication.', 'Analyzed how systems and identities shape experiences and opportunities.', 'Developed skills for respectful collaboration in diverse environments.'],
         bullets: ['Analyzed gender, equality, and social systems through evidence-based discussion.', 'Strengthened inclusive communication, cultural awareness, and critical thinking skills.', 'Developed perspective-taking skills relevant to diverse professional environments.'],
         skills: ['Equity Awareness', 'Inclusive Communication', 'Cultural Awareness', 'Critical Thinking', 'Collaboration'],
@@ -395,7 +395,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Examines visual culture, art, images, and meaning across global contexts.',
-        academicLanguage: ['Analyzed visual culture through historical, social, and global contexts.', 'Practiced visual interpretation and evidence-based discussion.', 'Explored how images communicate meaning across cultures.'],
+        learningOutcomes: ['Analyzed visual culture through historical, social, and global contexts.', 'Practiced visual interpretation and evidence-based discussion.', 'Explored how images communicate meaning across cultures.'],
         workforceLanguage: ['Strengthened visual literacy, cultural awareness, and communication skills.', 'Interpreted visual information and connected it to audience, context, and message.', 'Developed global perspective useful for communication and design-related work.'],
         bullets: ['Analyzed visual materials across global and cultural contexts.', 'Strengthened visual literacy, communication, and cultural awareness skills.', 'Interpreted images and messages with attention to audience, meaning, and context.'],
         skills: ['Visual Literacy', 'Cultural Awareness', 'Communication', 'Interpretation', 'Global Perspective'],
@@ -408,7 +408,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces foundational art concepts, creative process, visual organization, and design principles.',
-        academicLanguage: ['Practiced foundational art and design principles.', 'Developed creative problem-solving through visual projects.', 'Applied critique, revision, and design thinking to creative work.'],
+        learningOutcomes: ['Practiced foundational art and design principles.', 'Developed creative problem-solving through visual projects.', 'Applied critique, revision, and design thinking to creative work.'],
         workforceLanguage: ['Strengthened creativity, visual problem-solving, and iterative design skills.', 'Used feedback and revision to improve project outcomes.', 'Developed attention to detail and creative decision-making.'],
         bullets: ['Applied design principles and creative problem-solving to visual projects.', 'Strengthened creativity, attention to detail, and visual communication skills.', 'Used critique and revision to improve project quality and decision-making.'],
         skills: ['Creativity', 'Design Thinking', 'Visual Communication', 'Problem Solving', 'Revision'],
@@ -427,7 +427,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Explores music across world cultures through listening, cultural context, and global perspectives.',
-        academicLanguage: ['Examined musical traditions across global cultures.', 'Analyzed music through cultural, historical, and social context.', 'Practiced listening, interpretation, and cultural comparison.'],
+        learningOutcomes: ['Examined musical traditions across global cultures.', 'Analyzed music through cultural, historical, and social context.', 'Practiced listening, interpretation, and cultural comparison.'],
         workforceLanguage: ['Strengthened global awareness, listening, and cultural interpretation skills.', 'Developed respect for diverse traditions and ways of communicating meaning.', 'Applied cultural awareness to understanding people, communities, and contexts.'],
         bullets: ['Analyzed world music traditions through cultural and historical contexts.', 'Strengthened global awareness, listening, and cultural interpretation skills.', 'Developed perspective-taking skills relevant to diverse professional environments.'],
         skills: ['Global Awareness', 'Listening', 'Cultural Interpretation', 'Communication', 'Perspective Taking'],
@@ -447,7 +447,7 @@ const resumeData = {
         credits: '4 credits',
         term: 'Varies',
         description: 'Introduces biological concepts through scientific inquiry, observation, experimentation, and laboratory investigation.',
-        academicLanguage: [
+        learningOutcomes: [
           'Explored biological systems through observation, experimentation, and scientific analysis.',
           'Practiced laboratory techniques, data collection, and interpretation.',
           'Applied scientific reasoning to biological questions and real-world systems.'
@@ -487,7 +487,7 @@ const resumeData = {
         credits: '4 credits',
         term: 'Varies',
         description: 'Explores living systems, cellular biology, genetics, evolution, and scientific investigation through lecture and lab.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined biological systems through cellular, genetic, and evolutionary frameworks.',
           'Applied laboratory investigation and evidence-based scientific reasoning.',
           'Practiced interpretation of biological data and experimental results.'
@@ -527,7 +527,7 @@ const resumeData = {
         credits: '4 credits',
         term: 'Varies',
         description: 'Introduces human biology through anatomy, physiology, health, and laboratory investigation.',
-        academicLanguage: [
+        learningOutcomes: [
           'Explored human biological systems through lecture and laboratory activities.',
           'Applied observation, experimentation, and evidence-based analysis.',
           'Practiced interpretation of biological structures and functions.'
@@ -566,7 +566,7 @@ const resumeData = {
         credits: '4 credits',
         term: 'Varies',
         description: 'Introduces anatomical terminology, structures, systems, and organization of the human body.',
-        academicLanguage: [
+        learningOutcomes: [
           'Studied human anatomical structures and systems.',
           'Applied scientific terminology and interpretation skills.',
           'Connected structure and function across biological systems.'
@@ -605,7 +605,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces chemical principles, scientific reasoning, and applications of chemistry to real-world systems.',
-        academicLanguage: [
+        learningOutcomes: [
           'Explored chemical principles through scientific reasoning and analysis.',
           'Applied problem-solving and quantitative reasoning to chemistry concepts.',
           'Connected chemistry to real-world systems and applications.'
@@ -644,7 +644,7 @@ const resumeData = {
         credits: '4 credits',
         term: 'Varies',
         description: 'Introduces general chemistry concepts, laboratory investigation, quantitative analysis, and scientific problem solving.',
-        academicLanguage: [
+        learningOutcomes: [
           'Applied chemical principles through laboratory investigation and quantitative analysis.',
           'Practiced scientific reasoning, experimentation, and evidence-based interpretation.',
           'Solved chemistry problems using analytical and mathematical approaches.'
@@ -683,7 +683,7 @@ const resumeData = {
         credits: '4 credits',
         term: 'Varies',
         description: 'Introduces Earth systems, geological processes, observation, field investigation, and scientific interpretation.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined Earth systems through geological observation and scientific analysis.',
           'Applied field and laboratory investigation techniques.',
           'Interpreted geological evidence and environmental processes.'
@@ -722,7 +722,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces human nutrition, dietary analysis, health, wellness, and evidence-based nutritional decision-making.',
-        academicLanguage: [
+        learningOutcomes: [
           'Explored nutrition science through evidence-based analysis.',
           'Examined relationships between diet, wellness, and human health.',
           'Applied scientific reasoning to nutritional choices and health outcomes.'
@@ -761,7 +761,7 @@ const resumeData = {
         credits: '4 credits',
         term: 'Varies',
         description: 'Introduces physical science concepts through laboratory investigation, experimentation, and scientific reasoning.',
-        academicLanguage: [
+        learningOutcomes: [
           'Explored physical science concepts through experimentation and laboratory analysis.',
           'Applied scientific reasoning and evidence-based interpretation.',
           'Practiced quantitative and analytical problem-solving skills.'
@@ -806,7 +806,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces anthropology through human culture, behavior, adaptation, identity, and social systems.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined human cultures, behavior, and social systems through anthropological perspectives.',
           'Analyzed how culture shapes identity, relationships, and lived experience.',
           'Practiced comparison, observation, and evidence-based interpretation.'
@@ -835,7 +835,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces business concepts, organizational functions, economic systems, and workplace practices.',
-        academicLanguage: [
+        learningOutcomes: [
           'Explored core business functions and organizational systems.',
           'Examined how businesses operate within economic and social environments.',
           'Practiced business vocabulary, analysis, and decision-making concepts.'
@@ -864,7 +864,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces criminal justice systems, law enforcement, courts, corrections, ethics, and public safety.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined criminal justice systems, institutions, and processes.',
           'Analyzed law enforcement, court, and correctional systems.',
           'Explored ethics, public safety, and social responsibility.'
@@ -893,7 +893,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces individual, business, and market decision-making, including supply, demand, incentives, costs, and resource allocation.',
-        academicLanguage: [
+        learningOutcomes: [
           'Analyzed individual and business decision-making through microeconomic concepts.',
           'Examined supply, demand, incentives, costs, markets, and resource allocation.',
           'Applied economic reasoning to real-world choices and tradeoffs.'
@@ -922,7 +922,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces broad economic systems, national income, inflation, unemployment, fiscal policy, monetary policy, and global economic issues.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined economic systems, national income, inflation, unemployment, and policy decisions.',
           'Analyzed how broad economic forces affect individuals, organizations, and communities.',
           'Applied economic reasoning to national and global issues.'
@@ -951,7 +951,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces American government, political institutions, civic participation, public policy, and democratic systems.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined American political institutions, civic participation, and public policy.',
           'Analyzed democratic systems, rights, responsibilities, and governance structures.',
           'Practiced evidence-based discussion of civic and political issues.'
@@ -980,7 +980,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces human behavior, thought, emotion, development, learning, personality, and mental processes.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined human behavior, cognition, emotion, learning, and development.',
           'Applied psychological concepts to understand individuals and groups.',
           'Practiced evidence-based analysis of human behavior.'
@@ -1015,7 +1015,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Explores human development across the lifespan, including physical, cognitive, emotional, and social growth.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined human development across life stages.',
           'Analyzed physical, cognitive, emotional, and social development.',
           'Applied developmental concepts to real-world human experiences.'
@@ -1049,7 +1049,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces psychological disorders, mental health concepts, symptoms, treatment approaches, and social understanding of abnormal behavior.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined psychological disorders, symptoms, and treatment approaches.',
           'Analyzed mental health concepts through scientific and social perspectives.',
           'Practiced evidence-based understanding of abnormal behavior.'
@@ -1084,7 +1084,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces social structures, institutions, inequality, culture, groups, and the relationship between individuals and society.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined social structures, institutions, culture, inequality, and group behavior.',
           'Analyzed how society shapes individual experiences and opportunities.',
           'Applied sociological perspectives to real-world social issues.'
@@ -1113,7 +1113,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Examines early American history, including political, social, cultural, and economic developments.',
-        academicLanguage: [
+        learningOutcomes: [
           'Analyzed early American history through political, social, cultural, and economic contexts.',
           'Interpreted historical evidence and primary sources.',
           'Practiced historical reasoning and evidence-based writing.'
@@ -1142,7 +1142,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Examines modern American history, including political, social, cultural, and economic change.',
-        academicLanguage: [
+        learningOutcomes: [
           'Analyzed modern American history through political, social, cultural, and economic developments.',
           'Interpreted historical evidence and competing perspectives.',
           'Practiced historical reasoning, discussion, and writing.'
@@ -1171,7 +1171,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Examines Montana history, including Indigenous histories, settlement, politics, environment, communities, and regional identity.',
-        academicLanguage: [
+        learningOutcomes: [
           'Analyzed Montana history through cultural, political, social, and environmental contexts.',
           'Examined Indigenous histories, regional development, and community change.',
           'Practiced historical interpretation and evidence-based discussion.'
@@ -1200,7 +1200,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Examines world history before 1500 CE through civilizations, cultures, exchange, conflict, and global development.',
-        academicLanguage: [
+        learningOutcomes: [
           'Analyzed early world history through cultural, political, economic, and social contexts.',
           'Examined global connections, civilizations, and historical change.',
           'Practiced source interpretation and comparative analysis.'
@@ -1229,7 +1229,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Examines modern world history through global change, conflict, culture, economics, and political systems.',
-        academicLanguage: [
+        learningOutcomes: [
           'Analyzed modern world history through global political, economic, and cultural change.',
           'Examined conflict, exchange, institutions, and international relationships.',
           'Practiced source evaluation and evidence-based historical analysis.'
@@ -1259,7 +1259,7 @@ const resumeData = {
         term: 'Varies',
         heritage: true,
         description: 'Introduces Native American studies through Indigenous histories, cultures, sovereignty, identity, and contemporary issues.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined Native American histories, cultures, sovereignty, identity, and contemporary issues.',
           'Analyzed Indigenous perspectives and historical contexts.',
           'Practiced respectful discussion and evidence-based interpretation.'
@@ -1296,7 +1296,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Explores addiction, recovery, diversity, social systems, and the impact of culture on health and human experience.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined addiction and recovery through cultural, social, and psychological perspectives.',
           'Analyzed how diversity, identity, and systems affect health and behavior.',
           'Practiced evidence-based discussion and interpretation.'
@@ -1336,7 +1336,7 @@ const resumeData = {
         term: 'Varies',
         heritage: true,
         description: 'Explores Native American beliefs, philosophies, worldviews, traditions, and cultural perspectives.',
-        academicLanguage: [
+        learningOutcomes: [
           'Examined Native American philosophies, beliefs, and cultural traditions.',
           'Analyzed Indigenous perspectives and systems of meaning.',
           'Practiced respectful interpretation and evidence-based discussion.'
@@ -1376,7 +1376,7 @@ const resumeData = {
         term: 'Varies',
         heritage: true,
         description: 'Examines Montana tribal nations through culture, history, sovereignty, identity, and contemporary issues.',
-        academicLanguage: [
+        learningOutcomes: [
           'Explored Montana tribal nations through historical, political, and cultural perspectives.',
           'Analyzed sovereignty, identity, and contemporary Indigenous issues.',
           'Practiced evidence-based interpretation and respectful discussion.'
@@ -1415,7 +1415,7 @@ const resumeData = {
         credits: '3 credits',
         term: 'Varies',
         description: 'Introduces American Sign Language, Deaf culture, visual communication, and foundational signing skills.',
-        academicLanguage: [
+        learningOutcomes: [
           'Developed foundational American Sign Language communication skills.',
           'Explored Deaf culture, identity, and visual communication practices.',
           'Practiced expressive and receptive communication strategies.'
@@ -1460,7 +1460,7 @@ const resumeData = {
         credits: '4 credits',
         term: 'Varies',
         description: 'Introduces foundational Spanish language skills, communication, grammar, vocabulary, and cultural understanding.',
-        academicLanguage: [
+        learningOutcomes: [
           'Developed foundational Spanish communication skills through speaking, listening, reading, and writing.',
           'Explored cultural practices and perspectives in Spanish-speaking communities.',
           'Practiced language comprehension and interpersonal communication.'
@@ -1499,7 +1499,7 @@ const resumeData = {
         credits: '4 credits',
         term: 'Varies',
         description: 'Continues development of Spanish language communication, comprehension, grammar, and cultural understanding.',
-        academicLanguage: [
+        learningOutcomes: [
           'Expanded Spanish language communication through conversation, reading, listening, and writing.',
           'Strengthened comprehension and interpersonal language skills.',
           'Explored cultural contexts in Spanish-speaking communities.'
@@ -1556,7 +1556,7 @@ const resumeData = {
           description:
             'Introduces Microsoft Office applications including word processing, spreadsheets, presentations, and digital productivity tools.',
 
-          academicLanguage: [
+          learningOutcomes: [
             'Developed foundational skills using Microsoft Office applications.',
             'Practiced document creation, spreadsheet organization, presentation development, and digital file management.',
             'Applied productivity software to communication, organization, and information tasks.'
@@ -1604,7 +1604,7 @@ const resumeData = {
           description:
             'Introduces foundational concepts in artificial intelligence, including machine learning, ethical considerations, problem solving, and emerging AI applications.',
 
-          academicLanguage: [
+          learningOutcomes: [
             'Explored foundational concepts related to artificial intelligence and machine learning.',
             'Examined ethical considerations, problem-solving approaches, and emerging AI technologies.',
             'Analyzed how AI systems influence communication, decision-making, and society.'
@@ -1666,7 +1666,7 @@ const resumeData = {
         description:
           'Students complete 9 credits of coursework numbered 100 or above from approved arts, humanities, and social sciences disciplines. Courses numbered 194 do not apply to the concentration area.',
 
-        academicLanguage: [
+        learningOutcomes: [
           'Selected coursework across arts, humanities, communication, social sciences, history, language, business, and related fields.',
           'Built an interdisciplinary academic foundation through courses emphasizing culture, society, communication, creativity, human behavior, and systems.',
           'Practiced analysis, interpretation, communication, and reflection across multiple disciplines.'
@@ -1753,7 +1753,7 @@ function renderLanguageContent(course) {
   if (!languageOutput || !academicToggle || !workforceToggle) return;
 
   const contentArray = currentLanguageMode === 'academic'
-    ? course.academicLanguage
+    ? course.learningOutcomes
     : course.workforceLanguage;
 
   academicToggle.classList.toggle('active', currentLanguageMode === 'academic');
