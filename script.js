@@ -1766,3 +1766,21 @@ if (degreeSelect && courseSelect) {
   courseSelect.addEventListener('change', updateResumeOutput);
   populateCourses();
 }
+
+const moLogo = document.querySelector('.mo-logo');
+const heroEgg = document.getElementById('heroEasterEgg');
+const closeHeroEgg = document.getElementById('closeHeroEgg');
+
+if (moLogo && heroEgg) {
+  moLogo.addEventListener('click', () => {
+    heroEgg.classList.remove('hidden');
+    heroEgg.setAttribute('aria-hidden', 'false');
+  });
+}
+
+if (closeHeroEgg) {
+  closeHeroEgg.addEventListener('click', () => {
+    heroEgg.classList.add('hidden');
+    heroEgg.setAttribute('aria-hidden', 'true');
+  });
+}
