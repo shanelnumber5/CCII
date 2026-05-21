@@ -73,12 +73,13 @@ li { margin: 5px 0; }
 
 .qr-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
-  gap: 42px;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 48px;
   align-items: center;
 
   width: 100%;
-  max-width: 100%;
+
+  padding: 42px 52px;
 
   background: linear-gradient(
     145deg,
@@ -87,9 +88,8 @@ li { margin: 5px 0; }
   );
 
   border: 1px solid var(--border-soft);
-  border-radius: var(--radius-xl);
+  border-radius: 28px;
 
-  padding: 40px 48px;
   box-shadow: var(--shadow-md);
 }
 
@@ -130,7 +130,7 @@ li { margin: 5px 0; }
 
 .qr-image-wrapper {
   display: flex;
-  justify-content: center;
+  justify-self: center;
 }
 
 .qr-image {
@@ -147,6 +147,7 @@ li { margin: 5px 0; }
 
 .qr-section {
   width: 100%;
+  margin-top: 40px;
 }
 
 .qr-text {
