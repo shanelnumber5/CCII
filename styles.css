@@ -1062,7 +1062,11 @@ h4 {
 @media print {
   .site-nav { display: none; }
   body { background: #fff; }
-  .site-header { background: #0e3356; -webkit-print-color-adjust: exact; }
+  .site-header {
+  background: #0e3356;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
   .section, .site-header { box-shadow: none; break-inside: avoid; }
 }
 
