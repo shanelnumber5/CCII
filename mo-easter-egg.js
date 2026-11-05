@@ -6,6 +6,7 @@
   const closeHeroEggButton = document.getElementById('closeHeroEgg');
   const heroThemeAudio = document.getElementById('heroTheme');
 
+  // Restart the soundtrack each time the dialog opens. Playback may be blocked by the browser.
   function playHeroTheme() {
     if (!heroThemeAudio) return;
 
