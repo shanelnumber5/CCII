@@ -18,6 +18,7 @@ button{min-height:44px;border:1px solid #88a5bc;background:#153b60;color:white;b
 :is(button,select,summary):focus-visible{outline:3px solid #ffda7c;outline-offset:2px} .primary{background:#edaa00;color:#071f42;border-color:#edaa00}.start-row{display:flex;justify-content:flex-end;align-items:center;gap:9px;margin-top:auto}.start-row button{min-width:105px}.mascot{image-rendering:pixelated;width:82px;height:57px;flex:none}.start-row canvas{height:42px;width:100px}.message{color:#ffda7c;margin:0}.message:empty{display:none}
 article{display:flex;flex:1;flex-direction:column;min-height:0}.info-head{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 17px}.course-name{margin:4px 0;font-weight:700;overflow-wrap:anywhere}
 .reading{flex:1;background:#faf6eb;color:#102b47;scrollbar-gutter:stable;overscroll-behavior:contain}.reading h3{margin:0 0 5px;border-bottom:1px solid #a0b2c0;font-size:16px}.reading ul{margin:0 0 12px;padding-left:21px}.reading li{padding:5px 0}.reading li+li{border-top:1px solid #d4dfe5}.metadata{font-weight:700;color:#31526f}
+.student-tip{margin:0 0 14px;padding:9px 12px;border-left:4px solid #edaa00;background:#eaf2f8}.student-tip h3{border:0;margin:0 0 3px}.student-tip p{margin:0}.student-tip p+p{margin-top:6px}
 footer,nav{display:flex;justify-content:space-between;align-items:center;gap:7px;flex-wrap:wrap}footer{padding:7px 10px;border-top:1px solid #7895ad;background:#0e3154}.change{background:transparent;border-color:transparent;text-decoration:underline}.status,.skip{position:absolute;bottom:8px}.status{left:8px;background:#071f42;margin:0;padding:6px 8px}.status:empty{display:none}.skip{right:8px}
 @media(max-width:520px){.intro,.reading{padding:12px}.info-head{padding:10px 12px}nav{width:100%}}
 @media(min-width:1000px) and (min-height:600px){.card{width:min(100%,760px);min-height:min(78vh,620px)}.card.intro-mode{min-height:min(68vh,550px)}.intro form{padding-top:28px}.intro .course-field{margin-top:28px}}
@@ -152,7 +153,7 @@ function positionScene(x) {
   scene.style.setProperty('--camera-x', -left / 10 + '%');
 }
 const nap = find('.nap').getContext('2d'), idle = find('.idle').getContext('2d'), sprites = new Image();
-const poses = {sleep:[0,6],jump:[6,4],swim:[10,8],land:[18,3],idle:[21,12],walk:[33,3]};
+const poses = {sleep:[0,6],jump:[6,4],swim:[10,8],land:[18,3],idle:[21,12],shore:[22,7],walk:[33,3]};
 // Leave clearance around the flagpole, including the cloud layer’s horizontal drift.
 const sky = [
   [0,54],[80,49],[105,79],[148,72],[148,45],[234,45],[234,64],
@@ -235,8 +236,15 @@ function openCard(index) {
   } else if (index === 2) {
     list('Résumé bullet examples',course.bullets);
   } else {
+    const tip = text(reading, 'div', '', 'student-tip');
+    text(tip, 'h3', 'How to answer the reflection questions');
+    text(tip, 'p', 'Choose one question below. Think of a specific assignment, lab, or project. In your own notes, write what you were trying to do, what you actually did, and what you noticed or learned. Two or three sentences are enough.');
+    text(tip, 'p', 'If you haven’t taken this course yet, use a similar experience or write what you’d like to try and how you’d know it worked.');
     list('Reflection prompts',course.reflection);
     list('Personal growth',course.growth);
+    text(reading, 'h3', 'Put your answer to work');
+    text(reading, 'p', 'Use the personal growth idea to choose one small action for your next assignment. If your answer shows a skill you want to highlight, return to the Résumé card and use your example to draft a bullet. Save the details in your notes so you can tell the story in an interview.');
+    text(reading, 'p', 'For example, “I noticed our group’s instructions were hard to follow, so I added a checklist and asked a classmate to try it. Their feedback showed me where to clarify two steps. Next time, I’ll ask someone to test the instructions before we submit them.”');
   }
   reading.scrollTop = 0;
   card.classList.remove('arrive');
@@ -343,19 +351,10 @@ function riverMotion(time) {
 }
 function shoreIdle(time) {
   const phase = Math.max(0, time - (landedAt ?? time) - walkDuration) % 3100;
-  const lift = phase < 850 ? 2.3 * Math.sin(Math.PI * phase / 850) ** 2 : 0;
-  if (!lift || reduced.matches) {
-    sprite(ctx,'swim',7,-46,-60,64,92);
-    return;
-  }
-  const tile = poses.swim[0] + 7;
-  const sx = tile % 8 * 100, sy = Math.floor(tile / 8) * 70;
-  ctx.imageSmoothingEnabled = false;
-  ctx.drawImage(sprites,sx,sy,66,70,-46,-60,60.72,64);
-  for (let x = 66; x < 100; x += 2) {
-    const headLift = lift * Math.min(1,(x - 66) / 12);
-    ctx.drawImage(sprites,sx+x,sy,2,70,-46+x*.92,-60-headLift,1.84,64);
-  }
+  // Look around using the clean standing frames, with feet at the tile baseline.
+  const look = [0, 1, 2, 3, 4, 5, 6, 4, 2, 1];
+  const frame = reduced.matches ? 0 : look[Math.floor(phase / 145)] ?? 0;
+  sprite(ctx, 'shore', frame, -46, -64, 64, 92);
 }
 const reflectionPanes = [
   [615,139,19,16],[637,137,25,18],[665,135,24,20],[692,135,8,20],
