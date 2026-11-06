@@ -9,33 +9,71 @@ main{width:100%}
 .layer{position:absolute;inset:0;display:grid;place-items:center;padding:16px clamp(16px,5%,48px);pointer-events:none}
 .card{width:min(100%,640px);max-height:100%;min-height:0;display:flex;flex-direction:column;overflow:hidden;background:#071f42;border:2px solid #edaa00;box-shadow:0 0 0 4px #071f42,0 12px 28px #0008;pointer-events:auto}
 .arrive{animation:flip .72s ease-out both}@keyframes flip{from{transform:rotateY(-90deg) scale(.94);opacity:1}to{transform:none;opacity:1}}
-.intro,.reading{padding:16px 20px;overflow:auto;min-height:0}.intro{display:flex;flex:1;flex-direction:column}.eyebrow{margin:0 0 4px;color:#ffda7c;font-size:12px;font-weight:750;letter-spacing:.12em}
-h1,h2{font:700 clamp(25px,4vw,38px)/1.1 Georgia,serif;margin:0} p{margin:6px 0 11px}.intro>p:not(.eyebrow),.course-name{color:#d2e7f7}
+.intro,.reading{padding:16px 20px;overflow:auto;min-height:0}.intro{display:flex;flex:1;flex-direction:column}
+h1,h2{font:700 clamp(25px,4vw,38px)/1.1 Georgia,serif;margin:0} p{margin:6px 0 11px}.intro>p,.course-name{color:#d2e7f7}
 form{display:flex;flex:1;flex-direction:column;gap:8px}label{font-size:14px;font-weight:700}.course-field{margin-top:6px}.select{display:block;position:relative;margin-top:4px}.select::after{content:"▼";position:absolute;right:2px;top:2px;bottom:2px;display:grid;place-items:center;width:37px;background:#edaa00;color:#071f42;pointer-events:none}
 select{appearance:none;display:block;width:100%;min-height:45px;background:white;color:#071f42;color-scheme:light;border:1px solid #b4c7d7;border-radius:4px;padding:6px 43px 6px 9px;font:650 17px system-ui}select option{color:#071f42;background:white}select:disabled{background:#e2ebf2}
 .custom-select{position:relative;margin-top:4px}.custom-select select{display:none}.custom-select>button{display:block;width:100%;height:48px;min-height:48px;overflow:hidden;background:white;color:#071f42;border:1px solid #b4c7d7;border-radius:4px;padding:6px 39px 6px 9px;text-align:left;white-space:nowrap;text-overflow:ellipsis;font:650 17px/1.25 system-ui}.custom-select>button::after{content:"▼";position:absolute;right:2px;top:2px;bottom:2px;display:grid;place-items:center;width:30px;background:#edaa00;color:#071f42;pointer-events:none}.custom-options{position:absolute;z-index:5;top:calc(100% + 4px);left:0;right:0;max-height:230px;overflow:auto;margin:0;padding:0;list-style:none;background:white;border:1px solid #b4c7d7;border-radius:4px;box-shadow:0 6px 16px #0008}.custom-options[hidden]{display:none}.custom-options button{display:block;width:100%;min-height:39px;border:0;border-radius:0;background:white;color:#071f42;text-align:left;font:500 16px system-ui}.custom-options button:hover,.custom-options button[aria-selected="true"]{background:#2167c7;color:white}.custom-select.is-disabled>button{background:#e2ebf2;color:#31526f;cursor:default}
 button{min-height:44px;border:1px solid #88a5bc;background:#153b60;color:white;border-radius:5px;padding:6px 12px;font:700 15px system-ui;cursor:pointer}button:disabled{opacity:.55;cursor:default}
 :is(button,select,summary):focus-visible{outline:3px solid #ffda7c;outline-offset:2px} .primary{background:#edaa00;color:#071f42;border-color:#edaa00}.start-row{display:flex;justify-content:flex-end;align-items:center;gap:9px;margin-top:auto}.start-row button{min-width:105px}.mascot{image-rendering:pixelated;width:82px;height:57px;flex:none}.start-row canvas{height:42px;width:100px}.message{color:#ffda7c;margin:0}.message:empty{display:none}
-article{display:flex;flex:1;flex-direction:column;min-height:0}.info-head{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 17px}.course-name{margin:4px 0;font-weight:700;overflow-wrap:anywhere}
-.reading{flex:1;background:#faf6eb;color:#102b47;scrollbar-gutter:stable;overscroll-behavior:contain}.reading h3{margin:0 0 5px;border-bottom:1px solid #a0b2c0;font-size:16px}.reading ul{margin:0 0 12px;padding-left:21px}.reading li{padding:5px 0}.reading li+li{border-top:1px solid #d4dfe5}.metadata{font-weight:700;color:#31526f}
+article{display:flex;flex:1 1 auto;flex-direction:column;min-height:0}.info-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px}.info-head h2:focus{outline:none}.course-name{margin:6px 0 0;line-height:1.35;overflow-wrap:anywhere}
+.reading{flex:1 1 auto;background:#faf6eb;color:#102b47;scrollbar-gutter:stable;overscroll-behavior:contain}.reading h3{margin:0 0 5px;font-size:17px;line-height:1.35}.reading p{margin:0 0 12px}.reading ul{margin:0 0 14px;padding-left:21px}.reading li+li{margin-top:6px}.reading > :last-child{margin-bottom:0}.metadata{font-weight:700;color:#31526f}
 .student-tip{margin:0 0 14px;padding:9px 12px;border-left:4px solid #edaa00;background:#eaf2f8}.student-tip h3{border:0;margin:0 0 3px}.student-tip p{margin:0}.student-tip p+p{margin-top:6px}
-footer,nav{display:flex;justify-content:space-between;align-items:center;gap:7px;flex-wrap:wrap}footer{padding:7px 10px;border-top:1px solid #7895ad;background:#0e3154}.change{background:transparent;border-color:transparent;text-decoration:underline}.status,.skip{position:absolute;bottom:8px}.status{left:8px;background:#071f42;margin:0;padding:6px 8px}.status:empty{display:none}.skip{right:8px}
-@media(max-width:520px){.intro,.reading{padding:12px}.info-head{padding:10px 12px}nav{width:100%}}
-@media(min-width:1000px) and (min-height:600px){.card{width:min(100%,760px);min-height:min(78vh,620px)}.card.intro-mode{min-height:min(68vh,550px)}.intro form{padding-top:28px}.intro .course-field{margin-top:28px}}
+footer,nav{display:flex;justify-content:space-between;align-items:center;gap:7px;flex-wrap:wrap}footer{padding:7px 10px;border-top:1px solid #7895ad;background:#0e3154}.change{background:transparent;border-color:transparent;text-decoration:underline}.status{position:absolute;left:12px;bottom:max(12px,env(safe-area-inset-bottom));max-width:calc(100% - 24px);overflow-wrap:anywhere;background:#071f42;margin:0;padding:6px 8px}.status:empty{display:none}.skip{position:absolute;top:max(12px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right))}
+.menu-close{display:none}
+@media(max-width:640px){
+  .card.intro-mode{position:relative;height:min(440px,100%)}
+  .intro{overscroll-behavior:contain}
+  .intro>p{margin:8px 0 14px}
+  .intro,.reading{padding:12px}
+  .info-head{padding:10px 12px}
+  nav{width:100%}
+  .custom-select{position:static;display:block;min-width:0}
+  .custom-select>button{
+    position:relative;
+    height:auto;
+    padding-block:10px;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+  .custom-options{
+    inset:12px 12px 66px;
+    max-height:none;
+    overscroll-behavior-y:contain;
+  }
+  form:has(.custom-options:not([hidden])) .menu-close{
+    position:absolute;
+    z-index:6;
+    bottom:12px;
+    left:12px;
+    right:12px;
+    display:block;
+    background:#071f42;
+  }
+  .custom-options button{
+    min-height:44px;
+    padding:9px 12px;
+    line-height:1.35;
+    overflow-wrap:anywhere;
+  }
+  .custom-options li+li{border-top:1px solid #d4dfe5}
+}
+@media(min-width:1000px) and (min-height:600px){.card{width:min(100%,760px)}.card.intro-mode{min-height:min(68vh,550px)}.intro form{padding-top:28px}.intro .course-field{margin-top:28px}}
 @media(prefers-reduced-motion:reduce){.arrive{animation:none}}
 </style>
 <main aria-label="Mo’s Résumé River"><div class="stage">
 <div class="scene"><img src="assets/campus-river.webp" alt="Pixel-art Great Falls College and a river at sunset" width="1000" height="563"><canvas width="1000" height="563" aria-hidden="true"></canvas></div>
 <div class="layer"><div class="card intro-mode">
-<section class="intro"><p class="eyebrow">GREAT FALLS COLLEGE MSU</p><h1 tabindex="-1">Mo’s Résumé River</h1>
-<p>See why your course matters. Connect what you practice in class to workplace skills, then see how to describe those skills on a résumé.</p>
+<section class="intro"><h1 tabindex="-1">Mo’s Résumé River</h1>
+<p>Choose a course to see how your classwork connects to job skills and how to describe those skills on a résumé.</p>
 <form>
 <label>1. Course category<span class="custom-select category-select"><select class="category"><option value="">Choose a category</option></select><button type="button" aria-haspopup="listbox" aria-expanded="false">Choose a category</button><ul class="custom-options" role="listbox" hidden></ul></span></label>
 <label class="course-field">2. Course<span class="custom-select course-select is-disabled"><select class="course" disabled><option value="">Choose a category first</option></select><button type="button" aria-haspopup="listbox" aria-expanded="false" disabled>Choose a category first</button><ul class="custom-options" role="listbox" hidden></ul></span></label>
 <div class="start-row"><canvas class="mascot nap" width="100" height="42" aria-hidden="true"></canvas><button class="primary start" type="submit">Start →</button></div>
 <p class="message" role="status"></p>
+<button class="menu-close" type="button">Close choices</button>
 </form></section>
-<article hidden><div class="info-head"><div><p class="eyebrow step"></p><h2 tabindex="-1"></h2><p class="course-name"></p></div><canvas class="mascot idle" width="100" height="70" aria-hidden="true"></canvas></div>
+<article hidden><div class="info-head"><div><h2 tabindex="-1"></h2><p class="course-name"></p></div><canvas class="mascot idle" width="100" height="70" aria-hidden="true"></canvas></div>
 <div class="reading" tabindex="0" role="region" aria-label="Course details"></div></article>
 <footer hidden><button class="change" type="button">Change course</button><nav aria-label="Course steps"><button class="previous" type="button">← Previous</button><span class="count" aria-hidden="true"></span><button class="primary next" type="button">Next →</button></nav></footer>
 </div></div><p class="status" role="status"></p><button class="skip" type="button" hidden>Skip swim</button>
@@ -214,7 +252,6 @@ function openCard(index) {
   card.hidden = false;
   skip.hidden = true;
   status.textContent = '';
-  find('.step').textContent = 'STEP ' + (index + 1) + ' OF ' + names.length;
   find('h2').textContent = names[index];
   find('.course-name').textContent = course.title;
   find('.count').textContent = (index + 1) + ' / ' + names.length;
@@ -250,7 +287,7 @@ function openCard(index) {
   card.classList.remove('arrive');
   void card.offsetWidth;
   card.classList.add('arrive');
-  find('h2').focus();
+  find('h2').focus({preventScroll: true});
   if (reduced.matches && ready) render(performance.now());
 }
 const walkDuration = 560;
@@ -465,11 +502,15 @@ function closeMenus() {
   });
 }
 function openMenu(wrapper) {
-  closeMenus();
   const list = wrapper.querySelector('.custom-options');
-  if (!wrapper.classList.contains('is-disabled')) {
+  const shouldOpen = list.hidden && !wrapper.classList.contains('is-disabled');
+  closeMenus();
+  if (shouldOpen) {
     list.hidden = false;
     wrapper.querySelector('button').setAttribute('aria-expanded', 'true');
+    if (matchMedia('(max-width: 640px)').matches) {
+      list.querySelector('button')?.focus({preventScroll: true});
+    }
   }
 }
 function choose(wrapper, select, button, event) {
@@ -480,6 +521,7 @@ function choose(wrapper, select, button, event) {
   wrapper.querySelectorAll('[role="option"]').forEach(option => option.setAttribute('aria-selected', option === choice ? 'true' : 'false'));
   closeMenus();
   select.dispatchEvent(new Event('change'));
+  button.focus({preventScroll: true});
 }
 categoryButton.addEventListener('click', () => openMenu(categorySelect));
 courseButton.addEventListener('click', () => openMenu(courseSelect));
@@ -489,6 +531,16 @@ category.addEventListener('change',filter);
 picker.addEventListener('change',()=>{message.textContent='';});
 document.addEventListener('click', event => {
   if (!event.target.closest('.custom-select')) closeMenus();
+});
+function dismissMenu() {
+  const button = form.querySelector('button[aria-expanded="true"]');
+  if (!button) return;
+  closeMenus();
+  button.focus({preventScroll: true});
+}
+find('.menu-close').addEventListener('click', dismissMenu);
+form.addEventListener('keydown', event => {
+  if (event.key === 'Escape') dismissMenu();
 });
 form.addEventListener('submit',event=>{
   event.preventDefault();
